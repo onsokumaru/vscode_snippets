@@ -1,0 +1,90 @@
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	// My C snippets for VS Code
+	"Single Line Comment":{
+		"prefix": "scom",
+		"body": [
+			"// $1",
+			"$0"
+		],
+		"description": "single line comment"
+	},
+	"Multi-line Comment":{
+		"prefix": "mcom",
+		"body": [
+			"/* $1 */",
+			"$0"
+		],
+		"description": "in-line multi-line comment"
+	},
+	"Real Multi-line Comment": {
+		"prefix": "mmcm",
+		"body": [
+			"/*",
+			"\t$1",
+			"*/",
+			"$0",
+		],
+		"description": "real multi-line comment"
+	},
+	"Function Definition": {
+		"prefix": "fnd",
+		"body": [
+			"${1:return type} ${2:func name}( ${3:parameter list} ) {\n",
+			"\t${4:definition}\n",
+			"\t${5:return} ",
+			"}",
+			"$0"
+		],
+		"description": "Function template"
+	},
+	"Source File Header": {
+		"prefix": "head",
+		"body": [
+			"/******************************",
+			"",
+			"\tAuthor : ${1:Mike Furtado}",
+			"\tFilename : ${2:$TM_FILENAME}",
+			"\tDate : ${3:$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE}",
+			"\t${4:Details : }",
+			"\tLicense : MIT",
+			"",
+			"Copyright (c) 2012-2021 Scott Chacon and others",
+			"",
+			"Permission is hereby granted, free of charge, to any person obtaining",
+			"a copy of this software and associated documentation files (the",
+			"\"Software\"), to deal in the Software without restriction, including",
+			"without limitation the rights to use, copy, modify, merge, publish,",
+			"distribute, sublicense, and/or sell copies of the Software, and to",
+			"permit persons to whom the Software is furnished to do so, subject to",
+			"the following conditions:",
+			"",
+			"The above copyright notice and this permission notice shall be",
+			"included in all copies or substantial portions of the Software.",
+			"",
+			"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,",
+			"EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF",
+			"MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND",
+			"NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE",
+			"LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION",
+			"OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION",
+			"WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+			"",
+			"*******************************/",
+			"$0"
+		],
+		"description": "Basic header for source files"
+	}
+}
